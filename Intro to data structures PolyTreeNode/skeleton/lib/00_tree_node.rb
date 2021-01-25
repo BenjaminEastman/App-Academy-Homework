@@ -19,6 +19,11 @@ class PolyTreeNode
     end
 
     def parent=(name)
+        if !@parent.nil?
+            @parent.children.delete(self)
+
+        end
+        
         @parent = name
         name.children << self
     end
