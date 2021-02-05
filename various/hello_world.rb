@@ -1,0 +1,3 @@
+array = []
+
+p array.flatten
